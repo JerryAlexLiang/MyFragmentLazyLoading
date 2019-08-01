@@ -97,7 +97,8 @@ public class ContainerFragment extends LazyFragment {
                         tvLoading.setVisibility(View.GONE);
                         scrollView.setVisibility(View.VISIBLE);
                         tvContent.setText(new Gson().toJson(commonUseBean.getData()));
-                        Log.d("TAG", "常用网站: " + new Gson().toJson(commonUseBean.getData()));
+                        Log.d("TAG", "onNext: " + "常用网站: ");
+                        Log.e("TAG", "常用网站: " + new Gson().toJson(commonUseBean.getData()));
                     }
 
                     @Override
@@ -124,7 +125,8 @@ public class ContainerFragment extends LazyFragment {
                         tvLoading.setVisibility(View.GONE);
                         scrollView.setVisibility(View.VISIBLE);
                         tvContent.setText(new Gson().toJson(listArticalBean.getData()));
-                        Log.d("TAG", "最新文章: " + new Gson().toJson(listArticalBean.getData()));
+                        Log.d("TAG", "onNext: " + "最新文章: ");
+                        Log.e("TAG", "最新文章: " + new Gson().toJson(listArticalBean.getData()));
                     }
 
                     @Override
@@ -151,7 +153,8 @@ public class ContainerFragment extends LazyFragment {
                         tvLoading.setVisibility(View.GONE);
                         scrollView.setVisibility(View.VISIBLE);
                         tvContent.setText(new Gson().toJson(listProjectBean.getData()));
-                        Log.d("TAG", "最新项目: " + new Gson().toJson(listProjectBean.getData()));
+                        Log.d("TAG", "onNext: " + "最新项目: ");
+                        Log.e("TAG", "最新项目: " + new Gson().toJson(listProjectBean.getData()));
                     }
 
                     @Override
@@ -178,7 +181,9 @@ public class ContainerFragment extends LazyFragment {
                         tvLoading.setVisibility(View.GONE);
                         scrollView.setVisibility(View.VISIBLE);
                         tvContent.setText(new Gson().toJson(wxArtucleBean.getData()));
-                        Log.d("TAG", "微信公众号: " + new Gson().toJson(wxArtucleBean.getData()));
+                        Log.d("TAG", "onNext: " + "微信公众号: ");
+                        Log.e("TAG", "微信公众号: " + new Gson().toJson(wxArtucleBean.getData()));
+
                     }
 
                     @Override
