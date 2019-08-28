@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".way01.LazyFragment">
+    tools:context=".way01.BaseLazyFragment">
 
     <TextView
         android:layout_width="match_parent"

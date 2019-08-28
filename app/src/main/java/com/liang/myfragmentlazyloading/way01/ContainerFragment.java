@@ -20,7 +20,7 @@ import com.liang.myfragmentlazyloading.retrofit.UrlConstants;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
-public class ContainerFragment extends LazyFragment {
+public class ContainerFragment extends BaseLazyFragment {
 
     private int tabIndex;
     public static final String INTENT_INT_INDEX = "index";
@@ -31,7 +31,7 @@ public class ContainerFragment extends LazyFragment {
     public static ContainerFragment newInstance(int tabIndex, boolean isLazyLoad) {
         Bundle args = new Bundle();
         args.putInt(INTENT_INT_INDEX, tabIndex);
-        args.putBoolean(LazyFragment.INTENT_BOOLEAN_LAZYLOAD, isLazyLoad);
+        args.putBoolean(BaseLazyFragment.INTENT_BOOLEAN_LAZYLOAD, isLazyLoad);
         ContainerFragment fragment = new ContainerFragment();
         fragment.setArguments(args);
         return fragment;
